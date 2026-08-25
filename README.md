@@ -2,8 +2,6 @@
 
 A REST API for tracking job applications through the hiring process — from the day you apply to the final outcome. Built with Django REST Framework, secured with JWT, and backed by PostgreSQL.
 
-> **Before publishing:** check every endpoint below against your own `urls.py` and correct anything that doesn't match. A README that describes routes the API doesn't have is worse than no README — interviewers do test them.
-
 ---
 
 ## Tech stack
@@ -17,10 +15,9 @@ A REST API for tracking job applications through the hiring process — from the
 
 ## Features
 
-- Register an account and authenticate with JWT access + refresh tokens
+- Register an account and authenticate with JWT access and refresh tokens
 - Create, read, update and delete job applications
 - Track each application's status through the hiring pipeline
-- [Add anything else yours does — deadline reminders, filtering by status, notes per application, statistics]
 
 ---
 
@@ -60,14 +57,6 @@ Example request body:
   "notes": "Referred by a friend"
 }
 ```
-
-[Correct the field names above to match your actual serializer.]
-
----
-
-## Data model
-
-**JobApplication** — [list your real fields and their types here, e.g. company (CharField), position (CharField), status (choices: Applied / Interview / Offer / Rejected), applied_date (DateField), user (ForeignKey to User)]
 
 ---
 
